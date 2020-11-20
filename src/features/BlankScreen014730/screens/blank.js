@@ -23,15 +23,23 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { TextInput_3: "" }
+  state = { TextInput_3: "", CheckBox_4: true }
 
   render = () => (
     <View>
-      <Text>Sample text content</Text>
+      <Text style={styles.Text_2}>Sample text content</Text>
       <TextInput
         placeholder="Sample text input placeholder"
+        style={styles.TextInput_3}
         value={this.state.TextInput_3}
         onChangeText={nextValue => this.setState({ TextInput_3: nextValue })}
+      />
+      <CheckBox
+        title="Radio button"
+        checkedIcon="dot-circle-o"
+        uncheckedIcon="circle-o"
+        checked={this.state.CheckBox_4}
+        onPress={nextChecked => this.setState({ CheckBox_4: nextChecked })}
       />
     </View>
   )
@@ -42,7 +50,12 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
   Text_2: {},
-  TextInput_3: {}
+  TextInput_3: {},
+  View_1: {},
+  Text_2: { alignSelf: "flex-end" },
+  TextInput_3: { width: 100, alignSelf: "flex-end" },
+  CheckBox_4: {}
 })
