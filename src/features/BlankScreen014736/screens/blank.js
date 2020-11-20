@@ -23,21 +23,22 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { TextInput_3: "", Switch_4: true }
+  state = { Switch_4: true, TextInput_3: "" }
 
   render = () => (
     <View>
       <Icon name="star" style={styles.Icon_2} />
+      <Switch
+        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
+        style={styles.Switch_4}
+        value={this.state.Switch_4}
+        onValueChange={nextChecked => this.setState({ Switch_4: nextChecked })}
+      />
       <TextInput
         placeholder="Sample text input placeholder"
         style={styles.TextInput_3}
         value={this.state.TextInput_3}
         onChangeText={nextValue => this.setState({ TextInput_3: nextValue })}
-      />
-      <Switch
-        style={styles.Switch_4}
-        value={this.state.Switch_4}
-        onValueChange={nextChecked => this.setState({ Switch_4: nextChecked })}
       />
     </View>
   )
@@ -103,6 +104,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 3,
     borderRadius: 5
   },
+
   View_1: {},
   Icon_2: {
     borderWidth: 3,
@@ -112,6 +114,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 3,
     borderRadius: 9
   },
+
   TextInput_3: { textAlign: "center" },
   Switch_4: {
     width: 50,
@@ -123,5 +126,26 @@ const styles = StyleSheet.create({
     borderTopWidth: 3,
     borderBottomWidth: 3,
     borderRadius: 5
-  }
+  },
+  View_1: {},
+  Icon_2: {
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3,
+    borderRadius: 9
+  },
+  Switch_4: {
+    width: 50,
+    height: 50,
+    alignSelf: "flex-start",
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3,
+    borderRadius: 5
+  },
+  TextInput_3: { textAlign: "center" }
 })
