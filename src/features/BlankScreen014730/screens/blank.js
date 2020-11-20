@@ -36,6 +36,8 @@ export default class Blank extends React.Component {
       />
       <CheckBox
         title="Radio button"
+        checkedIcon="dot-circle-o"
+        uncheckedIcon="circle-o"
         checked={this.state.CheckBox_4}
         onPress={nextChecked => this.setState({ CheckBox_4: nextChecked })}
       />
@@ -86,6 +88,23 @@ const styles = StyleSheet.create({
   TextInput_3: {
     alignSelf: "center",
     textAlign: "right",
+    textDecorationLine: "underline"
+  },
+
+  CheckBox_4: {},
+  Icon_5: {
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3,
+    borderRadius: 10
+  },
+  View_1: {},
+  Text_2: { alignSelf: "flex-start" },
+  TextInput_3: {
+    alignSelf: "center",
+    textAlign: "left",
     textDecorationLine: "underline"
   },
   CheckBox_4: {},
