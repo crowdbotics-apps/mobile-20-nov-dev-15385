@@ -80,6 +80,29 @@ const styles = StyleSheet.create({
     borderBottomWidth: 3,
     borderRadius: 5
   },
+
+  View_1: {},
+  Icon_2: {
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3,
+    borderRadius: 9
+  },
+
+  TextInput_3: { textAlign: "center" },
+  Switch_4: {
+    width: 100,
+    height: 50,
+    alignSelf: "flex-start",
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3,
+    borderRadius: 5
+  },
   View_1: {},
   Icon_2: {
     borderWidth: 3,
@@ -91,7 +114,7 @@ const styles = StyleSheet.create({
   },
   TextInput_3: { textAlign: "center" },
   Switch_4: {
-    width: 100,
+    width: 50,
     height: 50,
     alignSelf: "flex-start",
     borderWidth: 3,
