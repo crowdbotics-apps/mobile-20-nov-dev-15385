@@ -1,4 +1,14 @@
 import axios from "axios"
+const newConnectorhgfhfh = axios.create({
+  baseURL:
+    "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/15385/storyboard/14730/",
+  headers: { Accept: "application/json", "Content-Type": "application/json" }
+})
+const plugin = axios.create({
+  baseURL:
+    "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/7307/storyboard/8491/",
+  headers: { Accept: "application/json", "Content-Type": "application/json" }
+})
 const mobilenovAPI = axios.create({
   baseURL: "https://mobile-20-nov-dev-15385-prod.herokuapp.com/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
