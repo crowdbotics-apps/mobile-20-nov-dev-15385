@@ -59,5 +59,14 @@ const styles = StyleSheet.create({
   View_1: {},
   Text_2: { alignSelf: "flex-start" },
   TextInput_3: { width: 100, alignSelf: "flex-end" },
+  CheckBox_4: {},
+  View_1: {},
+  Text_2: { alignSelf: "flex-start" },
+  TextInput_3: {
+    width: "100%",
+    alignSelf: "center",
+    textAlign: "right",
+    textDecorationLine: "underline"
+  },
   CheckBox_4: {}
 })
