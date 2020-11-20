@@ -23,7 +23,7 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { TextInput_3: "" }
+  state = { TextInput_3: "", Switch_4: true }
 
   render = () => (
     <View>
@@ -34,6 +34,12 @@ export default class Blank extends React.Component {
         value={this.state.TextInput_3}
         onChangeText={nextValue => this.setState({ TextInput_3: nextValue })}
       />
+      <Switch
+        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
+        style={styles.Switch_4}
+        value={this.state.Switch_4}
+        onValueChange={nextChecked => this.setState({ Switch_4: nextChecked })}
+      />
     </View>
   )
 }
@@ -43,6 +49,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
   Icon_2: {
     borderWidth: 3,
@@ -52,5 +59,25 @@ const styles = StyleSheet.create({
     borderBottomWidth: 3,
     borderRadius: 9
   },
-  TextInput_3: { textAlign: "center" }
+
+  TextInput_3: { textAlign: "center" },
+  View_1: {},
+  Icon_2: {
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3,
+    borderRadius: 9
+  },
+  TextInput_3: { textAlign: "center" },
+  Switch_4: {
+    alignSelf: "flex-start",
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3,
+    borderRadius: 5
+  }
 })
