@@ -4,6 +4,11 @@ const newConnectorhgfhfh = axios.create({
     "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/15385/storyboard/14730/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
+const newConnectorhgfhfh = axios.create({
+  baseURL:
+    "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/15385/storyboard/14730/",
+  headers: { Accept: "application/json", "Content-Type": "application/json" }
+})
 const plugin = axios.create({
   baseURL:
     "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/7307/storyboard/8491/",
