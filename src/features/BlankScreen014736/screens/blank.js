@@ -29,7 +29,6 @@ export default class Blank extends React.Component {
     <View>
       <Icon name="star" style={styles.Icon_2} />
       <Switch
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
         style={styles.Switch_4}
         value={this.state.Switch_4}
         onValueChange={nextChecked => this.setState({ Switch_4: nextChecked })}
@@ -127,6 +126,30 @@ const styles = StyleSheet.create({
     borderBottomWidth: 3,
     borderRadius: 5
   },
+
+  View_1: {},
+  Icon_2: {
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3,
+    borderRadius: 9
+  },
+
+  Switch_4: {
+    width: 50,
+    height: 50,
+    alignSelf: "flex-start",
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3,
+    borderRadius: 5
+  },
+
+  TextInput_3: { textAlign: "center" },
   View_1: {},
   Icon_2: {
     borderWidth: 3,
@@ -137,8 +160,8 @@ const styles = StyleSheet.create({
     borderRadius: 9
   },
   Switch_4: {
-    width: 50,
-    height: 50,
+    width: "100%",
+    height: "0%",
     alignSelf: "flex-start",
     borderWidth: 3,
     borderLeftWidth: 3,
