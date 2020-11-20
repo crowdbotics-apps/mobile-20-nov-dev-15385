@@ -39,6 +39,7 @@ export default class Blank extends React.Component {
         checked={this.state.CheckBox_4}
         onPress={nextChecked => this.setState({ CheckBox_4: nextChecked })}
       />
+      <Icon name="star" />
     </View>
   )
 }
@@ -68,5 +69,15 @@ const styles = StyleSheet.create({
     textAlign: "right",
     textDecorationLine: "underline"
   },
-  CheckBox_4: {}
+
+  CheckBox_4: {},
+  View_1: {},
+  Text_2: { alignSelf: "flex-start" },
+  TextInput_3: {
+    alignSelf: "center",
+    textAlign: "right",
+    textDecorationLine: "underline"
+  },
+  CheckBox_4: {},
+  Icon_5: {}
 })
